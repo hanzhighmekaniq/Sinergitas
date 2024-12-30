@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Efek Fade-in untuk body */
+body {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Efek Slide-in untuk form login */
+.login-form {
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Efek animasi hover pada tombol login */
+.btn-login {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  transform: scale(1.1);
+  background-color: rgba(1, 94, 255, 0.8);
+}
+
+/* Animasi pada input yang sedang difokus */
+input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Menambahkan efek gerakan pupil */
+.eye-container {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.eye-container .eye-pupil {
+  transition: transform 0.1s ease-out;
+}
+
+/* Animasi Background yang bergerak */
+body {
+  background: linear-gradient(45deg, #ff6b6b, #f7a8b8);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

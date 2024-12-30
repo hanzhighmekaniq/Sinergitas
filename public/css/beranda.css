@@ -1,0 +1,49 @@
+        /* Tombol aktif */
+        .kategori-button-all.active,
+        .kategori-button.active {
+            background-color: #68B92E;
+            /* Warna hijau untuk tombol aktif */
+            color: #ffffff;
+            /* Warna teks putih */
+            border-color: #68B92E;
+            /* Warna border hijau */
+        }
+
+        /* Hover untuk tombol aktif */
+        .kategori-button-all.active:hover,
+        .kategori-button.active:hover {
+            background-color: #4A8B1F;
+            /* Warna hijau gelap untuk hover */
+        }
+
+        /* Tombol hover untuk kategori (All dan kategori lainnya) */
+        .kategori-button-all:hover,
+        .kategori-button:hover {
+            background-color: #EA891B;
+            /* Warna oranye untuk hover */
+            color: #ffffff;
+            /* Warna teks putih pada hover */
+            border-color: #4A8B1F;
+            /* Warna border oranye pada hover */
+        }
+
+        /* Tombol tidak aktif (semua kategori tombol yang tidak aktif) */
+        .kategori-button {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Menyembunyikan efek hover saat tombol aktif */
+        .kategori-button:not(.active):hover {
+            background-color: #4A8B1F;
+            /* Warna oranye untuk hover */
+            color: #ffffff;
+            /* Warna teks putih pada hover */
+        }
+
+        .kategori-button-all:hover,
+        .kategori-button:hover {
+            background-color: var(--hover-color);
+            color: white;
+        }
+
+
